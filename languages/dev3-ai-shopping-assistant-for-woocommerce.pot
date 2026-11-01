@@ -1,0 +1,2844 @@
+# Copyright (C) 2026 DEV3 Technologies
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: DEV3 AI Shopping Assistant & Chatbot for WooCommerce 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/dev3-ai-shopping-assistant-for-woocommerce\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-10-25T01:19:32+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: dev3-ai-shopping-assistant-for-woocommerce\n"
+
+#. Plugin Name of the plugin
+#: dev3-ai-shopping-assistant-for-woocommerce.php
+msgid "DEV3 AI Shopping Assistant & Chatbot for WooCommerce"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: dev3-ai-shopping-assistant-for-woocommerce.php
+msgid "https://dev3.tech/item/dev3-ai-shopping-assistant-for-woocommerce"
+msgstr ""
+
+#. Description of the plugin
+#: dev3-ai-shopping-assistant-for-woocommerce.php
+msgid "An AI shopping assistant chat for WooCommerce that knows your catalog, orders and store policies, recommends products, tracks orders and adds to cart."
+msgstr ""
+
+#. Author of the plugin
+#: dev3-ai-shopping-assistant-for-woocommerce.php
+msgid "DEV3 Technologies"
+msgstr ""
+
+#. Author URI of the plugin
+#: dev3-ai-shopping-assistant-for-woocommerce.php
+msgid "https://dev3.tech"
+msgstr ""
+
+#: includes/Admin/Admin_Page.php:40
+msgid "DEV3 AI Assistant"
+msgstr ""
+
+#: includes/Admin/Admin_Page.php:70
+msgid "Settings"
+msgstr ""
+
+#: includes/Ai/Admin_Ai.php:187
+msgid "There are not enough conversations yet. Insights need at least a few shopper messages."
+msgstr ""
+
+#: includes/Ai/Admin_Ai.php:268
+msgid "This conversation has no messages to summarise."
+msgstr ""
+
+#: includes/Ai/Assistant.php:226
+msgid "This product has options to choose (like size or colour). Pick them on the product page and add it from there."
+msgstr ""
+
+#: includes/Chat/Cart.php:52
+#: includes/Chat/Cart.php:107
+msgid "The cart is not available right now."
+msgstr ""
+
+#: includes/Chat/Cart.php:56
+msgid "That product is not available."
+msgstr ""
+
+#: includes/Chat/Cart.php:59
+msgid "This product has options. Choose them on the product page."
+msgstr ""
+
+#: includes/Chat/Cart.php:62
+msgid "Sorry, this product is out of stock."
+msgstr ""
+
+#: includes/Chat/Cart.php:71
+msgid "Sorry, we could not add this product to your cart."
+msgstr ""
+
+#: includes/Chat/Cart.php:111
+msgid "That item is no longer in your cart."
+msgstr ""
+
+#: includes/Chat/Handoff.php:50
+msgid "Enter a valid email address so we can reply."
+msgstr ""
+
+#: includes/Chat/Handoff.php:53
+msgid "Write a short message for our team."
+msgstr ""
+
+#. translators: 1: shopper name or email, 2: site name
+#: includes/Chat/Handoff.php:78
+#, php-format
+msgid "[%2$s] Chat: %1$s needs a reply"
+msgstr ""
+
+#. translators: 1: name, 2: email, 3: message, 4: transcript, 5: admin link
+#: includes/Chat/Handoff.php:81
+#, php-format
+msgid ""
+"Name: %1$s\n"
+"Email: %2$s\n"
+"\n"
+"Message:\n"
+"%3$s\n"
+"\n"
+"Transcript:\n"
+"%4$s\n"
+"\n"
+"Open the conversation: %5$s"
+msgstr ""
+
+#: includes/Chat/Handoff.php:96
+msgid "We could not send your message. Please try again or contact us by email."
+msgstr ""
+
+#: includes/Chat/Handoff.php:110
+msgid "Write a reply first."
+msgstr ""
+
+#: includes/Chat/Handoff.php:113
+msgid "This shopper did not leave an email address."
+msgstr ""
+
+#. translators: %s: site name
+#: includes/Chat/Handoff.php:117
+#, php-format
+msgid "Reply from %s"
+msgstr ""
+
+#: includes/Chat/Handoff.php:119
+msgid "The email could not be sent. Check your site’s mail settings."
+msgstr ""
+
+#: includes/Chat/Orders.php:47
+msgid "We could not find an order with that number and email address. Check both and try again."
+msgstr ""
+
+#: includes/Chat/Orders.php:209
+msgid "Order placed"
+msgstr ""
+
+#: includes/Chat/Orders.php:210
+msgid "Payment received"
+msgstr ""
+
+#: includes/Chat/Orders.php:211
+msgid "Shipped"
+msgstr ""
+
+#: includes/Chat/Orders.php:212
+msgid "Completed"
+msgstr ""
+
+#: includes/Chat/Orders.php:246
+msgid "We are waiting for the payment to complete."
+msgstr ""
+
+#: includes/Chat/Orders.php:248
+msgid "Your order is on hold while we confirm the payment."
+msgstr ""
+
+#: includes/Chat/Orders.php:250
+msgid "Your order is on its way. Use the tracking number below."
+msgstr ""
+
+#: includes/Chat/Orders.php:250
+msgid "Payment received. We are preparing your order for shipping."
+msgstr ""
+
+#: includes/Chat/Orders.php:252
+msgid "Your order has been fulfilled and shipped."
+msgstr ""
+
+#: includes/Chat/Orders.php:254
+msgid "This order was cancelled."
+msgstr ""
+
+#: includes/Chat/Orders.php:256
+msgid "This order was refunded."
+msgstr ""
+
+#: includes/Chat/Orders.php:258
+msgid "The payment for this order failed. You can try again from your account."
+msgstr ""
+
+#. translators: %s: order status
+#: includes/Chat/Orders.php:261
+#, php-format
+msgid "Current status: %s."
+msgstr ""
+
+#: includes/Chat/Product_Search.php:293
+msgid "Low stock"
+msgstr ""
+
+#: includes/Chat/Product_Search.php:293
+#: build/admin.js:2
+msgid "In stock"
+msgstr ""
+
+#: includes/Chat/Product_Search.php:293
+#: includes/Frontend/Widget.php:254
+msgid "Out of stock"
+msgstr ""
+
+#: includes/Chat/Product_Search.php:296
+msgid "Add to cart"
+msgstr ""
+
+#: includes/Chat/Product_Search.php:296
+msgid "Choose options"
+msgstr ""
+
+#: includes/Chat/Rules.php:79
+msgid "You’re welcome! Anything else I can help you with?"
+msgstr ""
+
+#: includes/Chat/Rules.php:102
+msgid "You can reach our team through the contact page."
+msgstr ""
+
+#: includes/Chat/Rules.php:106
+msgid "Sure. Leave your email and a short message, and our team will get back to you."
+msgstr ""
+
+#: includes/Chat/Rules.php:156
+msgid "Here is your most recent order:"
+msgid_plural "Here are your most recent orders:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/Chat/Rules.php:171
+msgid "I can check that for you. Enter your order number and the email address you used at checkout."
+msgstr ""
+
+#: includes/Chat/Rules.php:194
+msgid "Your cart is empty. Tell me what you are looking for and I will find it."
+msgstr ""
+
+#: includes/Chat/Rules.php:196
+#: includes/Chat/Rules.php:345
+#: includes/Settings.php:43
+msgid "Show me best sellers"
+msgstr ""
+
+#. translators: %s: cart subtotal
+#: includes/Chat/Rules.php:201
+msgid "Here is what is in your cart:"
+msgstr ""
+
+#. translators: %s: cart subtotal
+#: includes/Chat/Rules.php:201
+#, php-format
+msgid "Subtotal: %s"
+msgstr ""
+
+#: includes/Chat/Rules.php:234
+msgid "Is this the one? Tap the button to add it to your cart."
+msgstr ""
+
+#: includes/Chat/Rules.php:301
+msgid "I found this product for you:"
+msgid_plural "Here are some products that match:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/Chat/Rules.php:347
+#: includes/Settings.php:46
+msgid "Talk to a person"
+msgstr ""
+
+#: includes/Chat/Rules.php:350
+msgid "Sorry, I couldn’t find anything for that. Try other words (for example a product type, colour or price), or ask our team."
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:212
+msgid "Unsupported image type."
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:216
+msgid "The image data is invalid."
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:292
+msgid "AI features are turned off."
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:292
+msgid "Turn AI back on in API Config."
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:294
+msgid "Storefront AI is turned off."
+msgstr ""
+
+#: includes/Core3/Api/Ai.php:294
+msgid "Turn storefront AI back on in API Config."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:49
+msgid "No Gemini API key is configured."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:50
+msgid "Open the plugin settings → API Config and paste a key from Google AI Studio."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:63
+msgid "AI paused: the monthly AI budget is reached."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:64
+msgid "Raise the monthly cap in API Config, or wait until the budget resets on the 1st of next month."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:80
+msgid "The AI service took too long to respond."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:81
+msgid "Try again, shorten the prompt, lower Max Output Tokens, or switch to the faster model."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:89
+msgid "Your server could not reach the AI service (Google Gemini API)."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:90
+msgid "Check the server's internet connection or firewall (outbound HTTPS to generativelanguage.googleapis.com)."
+msgstr ""
+
+#. translators: %s: transport error message.
+#: includes/Core3/Api/Api_Error.php:98
+#, php-format
+msgid "Request to the AI service failed: %s"
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:99
+#: includes/Core3/Api/Gemini_Client.php:250
+#: includes/Core3/Api/Gemini_Client.php:422
+msgid "Try again in a moment."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:128
+msgid "The Gemini API key is not valid."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:129
+msgid "Create a new key in Google AI Studio and paste it in API Config."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:137
+msgid "Your Gemini quota is exhausted."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:137
+msgid "AI rate limit reached."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:139
+msgid "Wait for the quota to reset, enable billing on your Google Cloud project, or switch to a model with remaining quota."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:140
+msgid "Wait a few seconds and try again."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:148
+msgid "This API key is not allowed to use Gemini."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:149
+msgid "Enable the Generative Language API for the key's project, and check any key restrictions (HTTP referrer / IP)."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:156
+msgid "The selected Gemini model is not available."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:157
+msgid "Pick another model in API Config — click \"Refresh models\" to load the ones your key can use."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:164
+msgid "The AI service is not available in your server's region."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:165
+msgid "Host the site in a supported region or use a key from a supported project."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:172
+msgid "The AI service is temporarily unavailable."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:173
+msgid "This is on Google's side. Try again shortly or switch models."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:180
+msgid "The AI service rejected the request."
+msgstr ""
+
+#: includes/Core3/Api/Api_Error.php:181
+msgid "Adjust the prompt or settings and try again."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:250
+msgid "The AI returned an incomplete embedding batch."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:368
+msgid "The AI blocked this image request for safety reasons."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:368
+msgid "The AI did not return an image."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:369
+#: includes/Core3/Api/Gemini_Client.php:472
+#: includes/Core3/Api/Gemini_Client.php:508
+msgid "Rephrase the prompt and try again."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:369
+msgid "Try again, or describe the image more concretely."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:421
+msgid "The AI returned malformed data."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:471
+msgid "The AI blocked this request for safety reasons."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:507
+msgid "The AI stopped because the response was flagged."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:515
+msgid "The AI ran out of output tokens before writing an answer."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:516
+msgid "Increase Max Output Tokens in API Config, or set Reasoning to \"Low\"."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:523
+msgid "The AI returned an empty response."
+msgstr ""
+
+#: includes/Core3/Api/Gemini_Client.php:524
+msgid "Try again or rephrase the prompt."
+msgstr ""
+
+#: includes/Core3/Api/Prompts.php:124
+msgid "Unknown prompt template."
+msgstr ""
+
+#: includes/Core3/Core/Jobs.php:90
+msgid "Unknown job type."
+msgstr ""
+
+#: includes/Core3/Core/Jobs.php:116
+msgid "The job could not be saved."
+msgstr ""
+
+#: includes/Core3/Core/Jobs.php:238
+#: build/admin.js:1
+msgid "Failed"
+msgstr ""
+
+#: includes/Core3/Core/Jobs.php:339
+#: includes/Core3/Rest/Core_Controller.php:112
+msgid "Job not found."
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:33
+#: includes/Core3/Core/Privacy.php:34
+#: includes/Core3/Core/Privacy.php:165
+msgid "AI usage log"
+msgstr ""
+
+#. translators: %s: plugin name.
+#: includes/Core3/Core/Privacy.php:85
+#, php-format
+msgid "This site uses %s, which sends the content needed for AI features (for example product details, reviews or form text) to Google Gemini, operated by Google LLC, as a data processor. Only the fields needed for the requested feature are sent. Google's terms and privacy policy apply: https://ai.google.dev/gemini-api/terms"
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:87
+msgid "The plugin keeps a usage log (time, feature, token counts and the user account that triggered the request) to show AI usage and costs to administrators. It does not store the prompts."
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:169
+msgid "Feature"
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:173
+#: build/admin.js:1
+msgid "Model"
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:177
+#: build/admin.js:1
+msgid "Tokens"
+msgstr ""
+
+#: includes/Core3/Core/Privacy.php:181
+msgid "Date"
+msgstr ""
+
+#: includes/Core3/Data/Usage_Repository.php:194
+msgid "Deleted user"
+msgstr ""
+
+#: includes/Core3/Rest/Base_Controller.php:72
+msgid "Your session has expired. Reload the editor and try again."
+msgstr ""
+
+#: includes/Core3/Rest/Base_Controller.php:75
+#: includes/Core3/Rest/Core_Controller.php:115
+msgid "You do not have permission to do that."
+msgstr ""
+
+#: includes/Core3/Rest/Base_Controller.php:94
+msgid "Cross-origin requests are not allowed."
+msgstr ""
+
+#: includes/Core3/Rest/Base_Controller.php:104
+msgid "Too many requests. Please wait a moment."
+msgstr ""
+
+#: includes/Data/Conversations.php:468
+#: includes/Plugin.php:128
+#: includes/Plugin.php:129
+msgid "Shopping assistant chats"
+msgstr ""
+
+#: includes/Data/Conversations.php:472
+msgid "Started"
+msgstr ""
+
+#: includes/Data/Conversations.php:476
+#: build/admin.js:2
+msgid "Transcript"
+msgstr ""
+
+#: includes/Data/Knowledge.php:75
+msgid "Add a question/title and an answer."
+msgstr ""
+
+#: includes/Data/Knowledge.php:208
+msgid "What is your return and refund policy?"
+msgstr ""
+
+#: includes/Data/Knowledge.php:209
+msgid "Terms and conditions"
+msgstr ""
+
+#: includes/Data/Knowledge.php:210
+msgid "How do you use my personal data?"
+msgstr ""
+
+#. translators: %s: amount
+#: includes/Data/Knowledge.php:246
+#, php-format
+msgid "orders over %s"
+msgstr ""
+
+#: includes/Data/Knowledge.php:256
+msgid "Where do you ship and how much does shipping cost?"
+msgstr ""
+
+#: includes/Data/Knowledge.php:274
+msgid "Which payment methods do you accept?"
+msgstr ""
+
+#. translators: %s: list of payment methods
+#: includes/Data/Knowledge.php:276
+#, php-format
+msgid "You can pay with: %s."
+msgstr ""
+
+#: includes/Frontend/Widget.php:235
+msgid "Open chat"
+msgstr ""
+
+#: includes/Frontend/Widget.php:236
+msgid "Close chat"
+msgstr ""
+
+#: includes/Frontend/Widget.php:237
+msgid "Start a new chat"
+msgstr ""
+
+#: includes/Frontend/Widget.php:238
+#: build/admin.js:2
+msgid "Send"
+msgstr ""
+
+#: includes/Frontend/Widget.php:239
+#: build/admin.js:2
+msgid "Message"
+msgstr ""
+
+#: includes/Frontend/Widget.php:240
+msgid "Typing…"
+msgstr ""
+
+#: includes/Frontend/Widget.php:241
+msgid "Online"
+msgstr ""
+
+#: includes/Frontend/Widget.php:242
+msgid "Team away · assistant online"
+msgstr ""
+
+#: includes/Frontend/Widget.php:243
+msgid "Sorry, something went wrong. Please try again."
+msgstr ""
+
+#: includes/Frontend/Widget.php:244
+msgid "You seem to be offline. Check your connection and try again."
+msgstr ""
+
+#: includes/Frontend/Widget.php:245
+msgid "You are sending messages very fast. Please wait a moment."
+msgstr ""
+
+#: includes/Frontend/Widget.php:246
+msgid "Retry"
+msgstr ""
+
+#: includes/Frontend/Widget.php:247
+#: build/admin.js:2
+msgid "View"
+msgstr ""
+
+#: includes/Frontend/Widget.php:248
+msgid "Added to your cart"
+msgstr ""
+
+#: includes/Frontend/Widget.php:249
+msgid "Adding…"
+msgstr ""
+
+#: includes/Frontend/Widget.php:250
+msgid "View cart"
+msgstr ""
+
+#: includes/Frontend/Widget.php:251
+msgid "Checkout"
+msgstr ""
+
+#: includes/Frontend/Widget.php:252
+msgid "Undo"
+msgstr ""
+
+#: includes/Frontend/Widget.php:253
+msgid "Removed from your cart."
+msgstr ""
+
+#: includes/Frontend/Widget.php:255
+msgid "Order number"
+msgstr ""
+
+#: includes/Frontend/Widget.php:256
+msgid "Email"
+msgstr ""
+
+#: includes/Frontend/Widget.php:257
+msgid "Name"
+msgstr ""
+
+#: includes/Frontend/Widget.php:258
+msgid "Your message"
+msgstr ""
+
+#: includes/Frontend/Widget.php:259
+msgid "Find my order"
+msgstr ""
+
+#: includes/Frontend/Widget.php:260
+msgid "Send to the team"
+msgstr ""
+
+#: includes/Frontend/Widget.php:261
+msgid "Sent"
+msgstr ""
+
+#: includes/Frontend/Widget.php:262
+msgid "WhatsApp"
+msgstr ""
+
+#: includes/Frontend/Widget.php:263
+msgid "Call us"
+msgstr ""
+
+#: includes/Frontend/Widget.php:264
+msgid "Tracking"
+msgstr ""
+
+#: includes/Frontend/Widget.php:265
+msgid "View order"
+msgstr ""
+
+#: includes/Frontend/Widget.php:266
+msgid "Total"
+msgstr ""
+
+#: includes/Frontend/Widget.php:267
+#: build/admin.js:2
+msgid "Helpful"
+msgstr ""
+
+#: includes/Frontend/Widget.php:268
+#: build/admin.js:2
+msgid "Not helpful"
+msgstr ""
+
+#: includes/Frontend/Widget.php:269
+msgid "Thanks for the feedback"
+msgstr ""
+
+#: includes/Frontend/Widget.php:270
+msgid "Ask about this product"
+msgstr ""
+
+#. translators: %s: product name
+#: includes/Frontend/Widget.php:272
+#, php-format
+msgid "Tell me more about %s"
+msgstr ""
+
+#: includes/Frontend/Widget.php:273
+msgid "Privacy policy"
+msgstr ""
+
+#: includes/Frontend/Widget.php:274
+msgid "Please fill in this field."
+msgstr ""
+
+#: includes/Frontend/Widget.php:275
+msgid "Enter a valid email address."
+msgstr ""
+
+#: includes/Frontend/Widget.php:276
+msgid "Products"
+msgstr ""
+
+#: includes/Frontend/Widget.php:277
+msgid "Chat messages"
+msgstr ""
+
+#: includes/Frontend/Widget.php:278
+msgid "You"
+msgstr ""
+
+#: includes/Frontend/Widget.php:279
+msgid "Store team"
+msgstr ""
+
+#: includes/Frontend/Widget.php:280
+msgid "New message"
+msgstr ""
+
+#: includes/Index/Indexer.php:186
+msgid "Connect DEV3 AI (add your Gemini API key) to build the smart search index."
+msgstr ""
+
+#: includes/Index/Indexer.php:258
+msgid "No vector returned."
+msgstr ""
+
+#: includes/Plugin.php:154
+msgid "DEV3 AI Shopping Assistant & Chatbot needs WooCommerce to be active."
+msgstr ""
+
+#: includes/Rest/Admin_Controller.php:128
+msgid "Conversation not found."
+msgstr ""
+
+#: includes/Rest/Admin_Controller.php:444
+#: includes/Rest/Public_Controller.php:166
+msgid "Type a message first."
+msgstr ""
+
+#: includes/Rest/Public_Controller.php:257
+msgid "Adding to the cart from the chat is turned off."
+msgstr ""
+
+#: includes/Rest/Public_Controller.php:274
+msgid "Order tracking is not available in the chat."
+msgstr ""
+
+#. translators: %s: order number
+#: includes/Rest/Public_Controller.php:299
+#, php-format
+msgid "Order #%s"
+msgstr ""
+
+#: includes/Rest/Public_Controller.php:332
+msgid "Messages to the team are turned off."
+msgstr ""
+
+#: includes/Rest/Public_Controller.php:339
+msgid "Thanks! Your message is with our team. We will reply by email as soon as we can."
+msgstr ""
+
+#: includes/Rest/Public_Controller.php:366
+msgid "That message could not be rated."
+msgstr ""
+
+#: includes/Settings.php:30
+#: build/blocks.js:1
+msgid "Shopping assistant"
+msgstr ""
+
+#: includes/Settings.php:31
+msgid "Ask about products, orders and shipping"
+msgstr ""
+
+#: includes/Settings.php:38
+#: build/blocks.js:1
+msgid "Chat with us"
+msgstr ""
+
+#: includes/Settings.php:39
+msgid "Hi! I can help you find products, track an order or answer questions about shipping and returns. What are you looking for?"
+msgstr ""
+
+#: includes/Settings.php:44
+#: build/admin.js:2
+msgid "Track my order"
+msgstr ""
+
+#: includes/Settings.php:45
+msgid "Shipping & returns"
+msgstr ""
+
+#: includes/Settings.php:51
+#: build/blocks.js:1
+msgid "Ask about products, orders or shipping…"
+msgstr ""
+
+#: includes/Settings.php:52
+msgid "Our team is offline right now. Leave a message and we will reply by email."
+msgstr ""
+
+#: includes/Settings.php:89
+msgid "Chats are stored to help us improve. See our privacy policy."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Request cancelled."
+msgstr ""
+
+#: build/admin.js:1
+msgid "You appear to be offline."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Check your internet connection, then try again."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Could not reach your WordPress site."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Check your connection or reload the editor."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Your session has expired."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Save your work and reload the page."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Something went wrong."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Loading"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Generating…"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Generate with DEV3 AI"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Dismiss"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI paused: monthly budget reached"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Adjust the cap"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Try again"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Use a hex colour like #4f46e5."
+msgstr ""
+
+#: build/admin.js:1
+msgid "picker"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Queued"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Running"
+msgstr ""
+
+#: build/admin.js:1
+#: build/admin.js:2
+msgid "Done"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Cancelled"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Background job"
+msgstr ""
+
+#. translators: 1: processed, 2: total, 3: percent
+#: build/admin.js:1
+#, js-format
+msgid "%1$s of %2$s processed (%3$s%%)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Starting…"
+msgstr ""
+
+#. translators: %s: failed count
+#: build/admin.js:1
+#, js-format
+msgid "%s failed"
+msgstr ""
+
+#: build/admin.js:1
+#: build/admin.js:2
+msgid "Cancel"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Resume"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Retry failed"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Show failed items"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Estimated AI spend this month"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI paused"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI off"
+msgstr ""
+
+#. translators: %s: cap
+#: build/admin.js:1
+#, js-format
+msgid "of %s cap"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI turned off"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI paused · cap reached"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Near cap"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Monthly AI budget used"
+msgstr ""
+
+#. translators: 1: requests, 2: tokens
+#: build/admin.js:1
+#, js-format
+msgid "%1$s requests · %2$s tokens"
+msgstr ""
+
+#. translators: %s: date
+#: build/admin.js:1
+#, js-format
+msgid "resets %s"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Set a monthly cap"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Dismiss notification"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Choose from list"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Custom model ID…"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Google Gemini API key"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Create a free key in Google AI Studio, paste it here and click “Validate & save”. The key is encrypted in your database and never sent to the browser."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Get an API key"
+msgstr ""
+
+#: build/admin.js:1
+msgid "(opens in a new tab)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "The key is defined by the DEV3SA_GEMINI_API_KEY constant in wp-config.php."
+msgstr ""
+
+#: build/admin.js:1
+msgid "API key"
+msgstr ""
+
+#. translators: %d: number of models
+#: build/admin.js:1
+#, js-format
+msgid "Connected — %d models available to this key."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Validate & save"
+msgstr ""
+
+#: build/admin.js:1
+msgid "API key removed."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Remove key"
+msgstr ""
+
+#: build/admin.js:1
+msgid "OpenSSL is not available on this server, so the key is only obfuscated. Consider defining DEV3SA_GEMINI_API_KEY in wp-config.php instead."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Models & generation"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Fast is used for most tasks; Pro for complex, long-form or structured work."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Refresh models"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Engine settings saved."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Save engine settings"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Fast model"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Recommended: gemini-2.5-flash"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Pro model"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Recommended: gemini-2.5-pro"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Image model"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Used for image generation. Default: gemini-2.5-flash-image"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Embedding model"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Used for semantic search. Default: gemini-embedding-001"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Temperature"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Lower = focused and consistent, higher = more creative (0–1)."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Max output tokens"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Upper limit per answer."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Reasoning"
+msgstr ""
+
+#: build/admin.js:1
+msgid "“Low” keeps generations fast and cheap; “Auto” lets the model think longer."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Low (fast)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Auto (model decides)"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Budget & safety"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Costs are estimated from token counts and Google’s list prices. Check exact billing in Google AI Studio."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Budget and safety settings saved."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Save budget & safety"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Monthly AI budget cap"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI pauses when the estimated spend this month reaches the cap. 0 = no cap."
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI features"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Turn off to stop every AI call. The plugin keeps working without AI."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Storefront AI"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Kill switch for visitor-facing AI. Visitors get the non-AI fallback."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Cache AI results"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Reuse answers for identical requests to save tokens."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Mask personal data"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Replace emails, phone and card numbers before text is sent to Google Gemini."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Pagination"
+msgstr ""
+
+#. translators: 1: first row, 2: last row, 3: total rows
+#: build/admin.js:1
+#, js-format
+msgid "%1$s–%2$s of %3$s"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Previous page"
+msgstr ""
+
+#. translators: 1: page, 2: pages
+#: build/admin.js:1
+#, js-format
+msgid "Page %1$s of %2$s"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Next page"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Actions"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Nothing here yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Sort by"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Default"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Requests"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Est. cost"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No requests yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Token counts come from the AI provider’s usage metadata; costs are estimates. Check exact billing in Google AI Studio / Cloud Console."
+msgstr ""
+
+#: build/admin.js:1
+#: build/admin.js:2
+msgid "Period"
+msgstr ""
+
+#: build/admin.js:1
+#: build/admin.js:2
+msgid "Last 7 days"
+msgstr ""
+
+#: build/admin.js:1
+#: build/admin.js:2
+msgid "Last 30 days"
+msgstr ""
+
+#: build/admin.js:1
+#: build/admin.js:2
+msgid "Last 90 days"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Total tokens"
+msgstr ""
+
+#. translators: 1: input, 2: output
+#: build/admin.js:1
+#, js-format
+msgid "%1$s in · %2$s out"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Avg. response"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Errors"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Requests per day"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Requests per day chart"
+msgstr ""
+
+#. translators: 1: date, 2: requests, 3: tokens
+#: build/admin.js:1
+#, js-format
+msgid "%1$s — %2$s requests, %3$s tokens"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No requests in this period yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Usage appears here as soon as an AI feature runs."
+msgstr ""
+
+#: build/admin.js:1
+msgid "By task"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Task"
+msgstr ""
+
+#: build/admin.js:1
+msgid "By model"
+msgstr ""
+
+#: build/admin.js:1
+msgid "By user"
+msgstr ""
+
+#: build/admin.js:1
+msgid "User"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Recent requests"
+msgstr ""
+
+#: build/admin.js:1
+msgid "No requests logged yet"
+msgstr ""
+
+#: build/admin.js:1
+#: build/admin.js:2
+msgid "Time"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Where"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Time (s)"
+msgstr ""
+
+#: build/admin.js:1
+#: build/admin.js:2
+msgid "Status"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Plugin sections"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Section"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Close"
+msgstr ""
+
+#: build/admin.js:1
+msgid "DEV3 AI draft"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Accept"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Changes"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Side by side"
+msgstr ""
+
+#: build/admin.js:1
+#: build/admin.js:2
+msgid "Draft"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Not saved yet"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Draft view"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Edit JSON"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Edit draft"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Current"
+msgstr ""
+
+#. translators: %s: token count
+#: build/admin.js:1
+#, js-format
+msgid "%s tokens"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Cached"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Reject"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Regenerate"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Done editing"
+msgstr ""
+
+#: build/admin.js:1
+msgid "Edit"
+msgstr ""
+
+#: build/admin.js:1
+msgid "The JSON is not valid. Fix it or regenerate."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Day"
+msgstr ""
+
+#: build/admin.js:1
+msgid "The index is already up to date."
+msgstr ""
+
+#: build/admin.js:1
+msgid "Smart search index"
+msgstr ""
+
+#: build/admin.js:1
+msgid "DEV3 AI understands what shoppers mean (\"a warm gift for my dad\") by comparing embeddings of your products and answers. New and edited products are re-indexed automatically."
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI connected"
+msgstr ""
+
+#: build/admin.js:1
+msgid "AI not connected"
+msgstr ""
+
+#. translators: 1: indexed products, 2: products, 3: indexed entries, 4: entries
+#: build/admin.js:2
+#, js-format
+msgid "%1$d of %2$d products · %3$d of %4$d knowledge entries"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Building the index"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Indexing finished with some failures. Retry them from the job card."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Smart search index is ready."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Update index"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Build index with DEV3 AI"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Rebuild everything"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Add your Gemini API key"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Chat widget is switched on"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Knowledge base has answers (import your policies)"
+msgstr ""
+
+#: build/admin.js:2
+msgid "DEV3 AI connected (Gemini API key)"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Smart product search index built"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Dashboard"
+msgstr ""
+
+#: build/admin.js:2
+msgid "How the shopping assistant is helping your shoppers and your sales."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Test the assistant"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Connect DEV3 AI"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Add your API key"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Without a key the assistant runs in guided mode: keyword product search, order tracking, knowledge-base answers and handoff. Add a Google Gemini key for natural conversations, smart search and recommendations."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Conversations"
+msgstr ""
+
+#. translators: %s: messages
+#: build/admin.js:2
+#, js-format
+msgid "%s messages"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Answered"
+msgstr ""
+
+#. translators: %s: AI answer share
+#: build/admin.js:2
+#, js-format
+msgid "%s%% by DEV3 AI"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Added to cart"
+msgstr ""
+
+#: build/admin.js:2
+msgid "From chat product cards"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Revenue from chat"
+msgstr ""
+
+#. translators: %s: orders
+#: build/admin.js:2
+#, js-format
+msgid "%s paid orders"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Satisfaction"
+msgstr ""
+
+#. translators: %s: ratings
+#: build/admin.js:2
+#, js-format
+msgid "%s ratings"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Needs reply"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Open inbox"
+msgstr ""
+
+#: build/admin.js:2
+msgid "All caught up"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Conversations per day"
+msgstr ""
+
+#. translators: %d: days
+#: build/admin.js:2
+#, js-format
+msgid "Last %d days"
+msgstr ""
+
+#: build/admin.js:2
+msgid "No conversations yet"
+msgstr ""
+
+#: build/admin.js:2
+msgid "They appear here as soon as shoppers start chatting."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Setup checklist"
+msgstr ""
+
+#. translators: %d: steps left
+#: build/admin.js:2
+#, js-format
+msgid "%d to do"
+msgstr ""
+
+#: build/admin.js:2
+msgid "(done)"
+msgstr ""
+
+#: build/admin.js:2
+msgid "(to do)"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Top questions"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Question"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Asked"
+msgstr ""
+
+#: build/admin.js:2
+msgid "No questions yet"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Unanswered questions"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Fix with DEV3 AI"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Nothing unanswered"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Questions the assistant could not answer show up here."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Open"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Resolved"
+msgstr ""
+
+#: build/admin.js:2
+msgid "DEV3 AI"
+msgstr ""
+
+#: build/admin.js:2
+msgid "DEV3 AI (cached)"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Guided"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Knowledge base"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Fallback"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Team reply"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Form"
+msgstr ""
+
+#. translators: %d: id
+#: build/admin.js:2
+#, js-format
+msgid "Conversation #%d"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Conversation"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Guest shopper"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Delete"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Status updated."
+msgstr ""
+
+#. translators: %d: count
+#: build/admin.js:2
+#, js-format
+msgid "%d added to cart"
+msgstr ""
+
+#. translators: 1: order id, 2: revenue
+#: build/admin.js:2
+#, js-format
+msgid "Order #%1$d · %2$s"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Summary"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Summarise with DEV3 AI"
+msgstr ""
+
+#: build/admin.js:2
+msgid "DEV3 AI · Conversation summary"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Save summary"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Summary saved."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Shopper"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Team"
+msgstr ""
+
+#: build/admin.js:2
+msgid "System"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Assistant"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Products shown:"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Reply by email"
+msgstr ""
+
+#. translators: %s: email
+#: build/admin.js:2
+#, js-format
+msgid "Sent to %s and saved in the transcript. The conversation is marked resolved."
+msgstr ""
+
+#: build/admin.js:2
+msgid "This shopper has not left an email address yet."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Your reply"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Reply emailed to the shopper."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Send reply"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Delete this conversation?"
+msgstr ""
+
+#: build/admin.js:2
+msgid "The transcript is removed for good. Attributed revenue stays on the order."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Conversation deleted."
+msgstr ""
+
+#: build/admin.js:2
+msgid "First question"
+msgstr ""
+
+#: build/admin.js:2
+msgid "(no message)"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Guest"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Messages"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Outcome"
+msgstr ""
+
+#. translators: %d: count
+#: build/admin.js:2
+#, js-format
+msgid "%d in cart"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Order"
+msgstr ""
+
+#. translators: %d: count
+#: build/admin.js:2
+#, js-format
+msgid "%d not helpful"
+msgstr ""
+
+#. translators: %d: count
+#: build/admin.js:2
+#, js-format
+msgid "%d helpful"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Last message"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Every chat with transcript, outcome and rating. Reply by email to shoppers who asked for a person."
+msgstr ""
+
+#. translators: %d: rows
+#: build/admin.js:2
+#, js-format
+msgid "Exported %d conversations."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Export CSV"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Search"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Email, name or message text"
+msgstr ""
+
+#: build/admin.js:2
+msgid "All statuses"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Rating"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Any rating"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Rated helpful"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Rated not helpful"
+msgstr ""
+
+#: build/admin.js:2
+msgid "No conversations found"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Try other filters."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Conversations appear here when shoppers use the chat."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Question / title"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Answer"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Keywords"
+msgstr ""
+
+#: build/admin.js:2
+msgid "All drafts reviewed."
+msgstr ""
+
+#. translators: %d: drafts
+#: build/admin.js:2
+#, js-format
+msgid "%d draft to review. Nothing is saved until you accept it."
+msgid_plural "%d drafts to review. Nothing is saved until you accept them."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: count
+#: build/admin.js:2
+#, js-format
+msgid "%d entry added."
+msgid_plural "%d entries added."
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: %d: count
+#: build/admin.js:2
+#, js-format
+msgid "Accept %d without [CONFIRM]"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Needs your facts: replace [CONFIRM: …]"
+msgstr ""
+
+#. translators: %d: times
+#: build/admin.js:2
+#, js-format
+msgid "Asked %d time"
+msgid_plural "Asked %d times"
+msgstr[0] ""
+msgstr[1] ""
+
+#: build/admin.js:2
+msgid "For example:"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Add to knowledge base"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Entry added to the knowledge base."
+msgstr ""
+
+#: build/admin.js:2
+msgid "FAQ"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Shipping"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Returns"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Payment"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Policy"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Product info"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Other"
+msgstr ""
+
+#. translators: 1: added, 2: skipped
+#: build/admin.js:2
+#, js-format
+msgid "Imported %1$d entries (%2$d already existed)."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Type"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Live"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Imported"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Answers about shipping, returns, payment and your store. The assistant quotes them in rule mode and uses them as facts with DEV3 AI."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Import from store"
+msgstr ""
+
+#: build/admin.js:2
+msgid "New entry"
+msgstr ""
+
+#: build/admin.js:2
+msgid "No answers yet"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Import your refund, shipping and payment details from WooCommerce, or let DEV3 AI draft them."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Build my knowledge base with DEV3 AI"
+msgstr ""
+
+#: build/admin.js:2
+msgid "DEV3 AI reads your policy pages, shipping zones and payment methods and drafts the answers shoppers ask most. Review each draft: accept, edit or reject. Facts it could not find are marked [CONFIRM: …]."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Entries"
+msgstr ""
+
+#: build/admin.js:2
+msgid "No new entries suggested"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Edit entry"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Save entry"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Entry saved."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Question or title"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Live (used by the assistant)"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Comma-separated words shoppers might use, e.g. delivery, postage, courier."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Delete this entry?"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Entry deleted."
+msgstr ""
+
+#: build/admin.js:2
+msgid "This is a preview reply. On your store the assistant answers from your catalog, orders and knowledge base, like this:"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Stoneware mug, sage"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Pour-over coffee set"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Appearance"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Where it shows"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Features & contact"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Privacy"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Sun"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Mon"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Tue"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Wed"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Thu"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Fri"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Sat"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Assistant name"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Subtitle"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Greeting"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Starter buttons (one per line)"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Away message"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Assistant instructions"
+msgstr ""
+
+#: build/admin.js:2
+msgid "No published pages."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Show the floating chat on the storefront"
+msgstr ""
+
+#: build/admin.js:2
+msgid "The inline block and [dev3sa_chat] shortcode work either way."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Accent colour"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Text on the accent switches to dark automatically when needed for contrast."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Position"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Bottom right"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Bottom left"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Launcher"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Icon and label"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Icon only"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Launcher label"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Side offset (px)"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Bottom offset (px)"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Raise it if a cookie bar or sticky cart covers the button."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Assistant avatar"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Change avatar"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Choose avatar"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Remove"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Starter buttons"
+msgstr ""
+
+#: build/admin.js:2
+msgid "One per line, up to 6. \"Track my order\" and \"Talk to a person\" are answered without AI."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Message box placeholder"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Away message (outside business hours)"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Show the greeting as a bubble next to the launcher"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Open automatically after (seconds)"
+msgstr ""
+
+#: build/admin.js:2
+msgid "0 = never. Opens once per visitor."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Show the floating chat on"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Every page"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Shop, product, cart and account pages"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Only the pages I pick"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Show it to"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Everyone"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Guests only"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Logged-in customers only"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Hide on the checkout page"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Show on these pages"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Never show on these pages"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Product finder"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Add to cart from the chat"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Order tracking"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Talk to a person (handoff form)"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Products per answer"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Never suggest out-of-stock products"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Send handoff messages to"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Admin email"
+msgstr ""
+
+#: build/admin.js:2
+msgid "WhatsApp number"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Optional. Shows a WhatsApp button with the handoff form."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Phone number"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Use business hours"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Outside these hours the handoff form shows the away message. The assistant itself is always on."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Opens"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Closes"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Open on"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Answer with DEV3 AI when it is connected"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Off = guided assistant only (keyword search, knowledge base, order tracking, handoff)."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Tone"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Friendly"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Professional"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Playful"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Luxury"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Concise"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Answer length"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Short (1–3 sentences)"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Medium (up to 120 words)"
+msgstr ""
+
+#: build/admin.js:2
+msgid "AI answers per conversation"
+msgstr ""
+
+#: build/admin.js:2
+msgid "After this the guided assistant takes over (cost control)."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Messages per minute per visitor"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Extra instructions for the assistant"
+msgstr ""
+
+#: build/admin.js:2
+msgid "e.g. \"Always mention free returns within 60 days. Recommend gift wrap for gifts.\""
+msgstr ""
+
+#: build/admin.js:2
+msgid "Add to cart when the shopper asks (“add the blue mug to my cart”)"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Off = DEV3 AI shows the product with an Add button instead."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Keep the smart search index up to date automatically"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Store chat transcripts"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Off = messages are deleted after one day (needed for the conversation to make sense); totals are kept."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Delete transcripts after (days)"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Show a privacy line under the message box"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Privacy line"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Links to your privacy policy page automatically."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Chat widget saved."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Chat widget"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Look, messages, where it shows and what it can do. The preview updates as you type."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Save changes"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Widget settings"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Write my assistant’s copy with DEV3 AI"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Name, greeting, starter buttons, away message and voice instructions, written for your store. Review before saving."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Describe your brand voice (optional)"
+msgstr ""
+
+#: build/admin.js:2
+msgid "e.g. Handmade ceramics studio, warm and down to earth, a bit witty"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Use and save"
+msgstr ""
+
+#: build/admin.js:2
+msgid "New assistant copy saved."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Live preview"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Desktop"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Phone"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Preview device"
+msgstr ""
+
+#: build/admin.js:2
+msgid "On phones the chat opens as a full-screen sheet that stays above the keyboard."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Open your store"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Do you have a gift under 40?"
+msgstr ""
+
+#: build/admin.js:2
+msgid "What is your return policy?"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Add the cheapest mug to my cart"
+msgstr ""
+
+#: build/admin.js:2
+msgid "DEV3 AI · cached"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Guided rules"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Fallback (AI error)"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Test console"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Chat as a shopper and see the intent, sources and tokens behind every answer. Nothing is stored and no cart is changed."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Clear"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Pretend the shopper is on this product page"
+msgstr ""
+
+#: build/admin.js:2
+msgid "No product page"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Ask anything a shopper would"
+msgstr ""
+
+#: build/admin.js:2
+msgid "unanswered"
+msgstr ""
+
+#. translators: 1: order, 2: status
+#: build/admin.js:2
+#, js-format
+msgid "Order #%1$s · %2$s"
+msgstr ""
+
+#. translators: 1: qty, 2: product
+#: build/admin.js:2
+#, js-format
+msgid "Would add %1$d × %2$s to the cart"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Thinking…"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Type as a shopper…"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Why this answer"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Send a message, then select an answer to see its details."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Answered by"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Intent"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Why rules answered"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Model · tokens"
+msgstr ""
+
+#: build/admin.js:2
+msgid "cached"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Knowledge used"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Raw details"
+msgstr ""
+
+#: build/admin.js:2
+msgid "AI insights"
+msgstr ""
+
+#: build/admin.js:2
+msgid "DEV3 AI reads what shoppers ask (personal data masked) and tells you what they want, what they could not find and which answers are missing."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Knowledge gaps"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Questions the assistant could not answer or that shoppers rated “not helpful”, grouped, with draft answers you can review and add."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Find gaps with DEV3 AI"
+msgstr ""
+
+#: build/admin.js:2
+msgid "No gaps found"
+msgstr ""
+
+#: build/admin.js:2
+msgid "The assistant answered everything in this period."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Conversation report"
+msgstr ""
+
+#. translators: 1: date, 2: messages
+#: build/admin.js:2
+#, js-format
+msgid "Generated %1$s from %2$d shopper messages."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Themes, demand, sentiment and recommended actions."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Refresh report"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Generate report"
+msgstr ""
+
+#: build/admin.js:2
+msgid "No report yet"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Generate one when you have a few conversations."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Do this:"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Shoppers asked for, but you may not sell"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Nothing stood out."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Sentiment"
+msgstr ""
+
+#. translators: %d: percent
+#: build/admin.js:2
+#, js-format
+msgid "Positive %d%%"
+msgstr ""
+
+#. translators: %d: percent
+#: build/admin.js:2
+#, js-format
+msgid "Neutral %d%%"
+msgstr ""
+
+#. translators: %d: percent
+#: build/admin.js:2
+#, js-format
+msgid "Negative %d%%"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Recommended actions"
+msgstr ""
+
+#: build/admin.js:2
+msgid "API Config"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Usage Logs"
+msgstr ""
+
+#: build/admin.js:2
+msgid "Connect Google Gemini, pick models and set a monthly AI budget. The storefront AI switch turns the shopper chat AI off while keeping the guided assistant."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Requests, tokens and estimated cost of every DEV3 AI feature."
+msgstr ""
+
+#: build/admin.js:2
+msgid "Made by DEV3 Technologies · AI by Google Gemini, using your own API key."
+msgstr ""
+
+#: build/blocks.js:1
+msgid "An inline chat that finds products, tracks orders and answers store questions."
+msgstr ""
+
+#: build/blocks.js:1
+msgid "Chat"
+msgstr ""
+
+#: build/blocks.js:1
+msgid "Height (px)"
+msgstr ""
+
+#: build/blocks.js:1
+msgid "The live chat appears here on the front end."
+msgstr ""
+
+#: build/blocks.js:1
+msgid "Open chat button"
+msgstr ""
+
+#: build/blocks.js:1
+msgid "A button that opens the shopping assistant."
+msgstr ""
+
+#: build/blocks.js:1
+msgid "Button"
+msgstr ""
+
+#: build/blocks.js:1
+msgid "Label"
+msgstr ""
+
+#: build/blocks.js:1
+msgid "Empty = the launcher label from the plugin settings."
+msgstr ""

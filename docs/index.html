@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DEV3 AI Shopping Assistant &amp; Chatbot for WooCommerce: Documentation</title>
+<style>
+:root { --brand: #4f46e5; --text: #1f2328; --muted: #4b5563; --line: #e3e6eb; --soft: #f6f7fb; }
+* { box-sizing: border-box; }
+body { margin: 0; font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; color: var(--text); background: #fff; }
+header { background: linear-gradient(135deg, #4f46e5, #0891b2); color: #fff; padding: 40px 16px; }
+header .wrap, main { max-width: 980px; margin: 0 auto; }
+header h1 { margin: 0 0 6px; font-size: clamp(24px, 4vw, 34px); }
+header p { margin: 0; opacity: .9; }
+nav { position: sticky; top: 0; background: #fff; border-bottom: 1px solid var(--line); overflow-x: auto; white-space: nowrap; padding: 0 16px; z-index: 2; }
+nav a { display: inline-block; padding: 12px 10px; color: var(--muted); text-decoration: none; font-size: 14px; }
+nav a:hover, nav a:focus { color: var(--brand); }
+main { padding: 8px 16px 64px; }
+h2 { margin-top: 48px; padding-top: 8px; border-top: 1px solid var(--line); font-size: 24px; }
+h3 { margin-top: 28px; font-size: 18px; }
+code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 13.5px; }
+code { background: var(--soft); padding: 2px 6px; border-radius: 4px; }
+pre { background: #0f172a; color: #e2e8f0; padding: 16px; border-radius: 8px; overflow-x: auto; }
+pre code { background: none; padding: 0; color: inherit; }
+table { width: 100%; border-collapse: collapse; font-size: 14.5px; display: block; overflow-x: auto; }
+th, td { text-align: left; border-bottom: 1px solid var(--line); padding: 8px 10px; vertical-align: top; }
+th { background: var(--soft); }
+.note { background: #eef2ff; border-left: 4px solid var(--brand); padding: 12px 16px; border-radius: 6px; }
+.shots { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
+.shots figure { margin: 0; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; }
+.shots img { width: 100%; height: 220px; object-fit: cover; object-position: top; display: block; }
+.shots figcaption { padding: 8px 12px; font-size: 14px; color: var(--muted); }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+	<h1>DEV3 AI Shopping Assistant &amp; Chatbot for WooCommerce</h1>
+	<p>Version 1.0.0 · A shopping assistant chat that knows your catalog, orders and policies, with DEV3 AI on top.</p>
+</div></header>
+<nav aria-label="Sections">
+	<a href="#install">Install</a><a href="#quick">Quick start</a><a href="#widget">Chat widget</a><a href="#mobile">Phones</a><a href="#products">Product finder</a><a href="#cart">Add to cart</a><a href="#orders">Order tracking</a><a href="#kb">Knowledge base</a><a href="#handoff">Handoff</a><a href="#inbox">Conversations</a><a href="#dashboard">Dashboard</a><a href="#ai">DEV3 AI</a><a href="#gemini">Gemini key</a><a href="#privacy">Privacy</a><a href="#compat">Compatibility</a><a href="#hooks">Hooks</a><a href="#rest">REST API</a><a href="#faq">FAQ</a><a href="#changelog">Changelog</a>
+</nav>
+<main>
+
+<h2 id="install">Installation</h2>
+<ol>
+	<li>Requirements: WordPress 6.0+, PHP 7.4+ (tested on 8.3), WooCommerce 8.0+.</li>
+	<li><strong>Plugins › Add New › Upload Plugin</strong>, choose <code>dev3-ai-shopping-assistant-for-woocommerce.zip</code>, install and activate.</li>
+	<li>Open <strong>DEV3 AI Assistant</strong> in the admin menu.</li>
+</ol>
+<p>No licence key or activation is needed. Updates ship as new zips.</p>
+
+<h2 id="quick">Quick start (5 minutes)</h2>
+<ol>
+	<li><strong>Knowledge base › Import from store</strong>: your refund page, terms, privacy page, shipping zones and payment methods become answers.</li>
+	<li><strong>Chat widget</strong>: set the name, colour and greeting. The live preview shows the result (desktop or phone).</li>
+	<li>Visit your shop: the chat button is in the bottom corner. Try "best sellers", "mugs under 30", "track my order".</li>
+	<li>Optional: <strong>API Config</strong> › add a Google Gemini key, then <strong>Knowledge base › Build index with DEV3 AI</strong>. The assistant now holds real conversations.</li>
+</ol>
+
+<h2 id="widget">Chat widget</h2>
+<ul>
+	<li><strong>Appearance</strong>: assistant name, subtitle, avatar (media library), accent colour (text colour adapts for contrast), bottom-right or bottom-left, offsets, launcher with icon + label or icon only.</li>
+	<li><strong>Messages</strong>: greeting, up to 6 starter buttons, message-box placeholder, away message, greeting bubble, auto-open after N seconds (once per visitor).</li>
+	<li><strong>Where it shows</strong>: every page, shop pages only, or chosen pages; excluded pages; hide on checkout; everyone, guests only or customers only.</li>
+	<li><strong>Inline chat</strong>: add the <em>Shopping assistant</em> block (height setting) or <code>[dev3sa_chat height="560"]</code>.</li>
+	<li><strong>Open from anywhere</strong>: the <em>Open chat button</em> block, <code>[dev3sa_chat_button label="Ask us"]</code>, any element with <code>data-dev3sa-open</code> (optionally <code>data-dev3sa-message="…"</code> to send a first message), or a link to <code>#dev3sa-chat</code>. Developers can call <code>window.dev3saChatApi.open( 'message' )</code>.</li>
+	<li>Theme-friendly: inherits your font; colours are CSS custom properties (<code>--dev3sa-accent</code>, <code>--dev3sa-ink</code>, <code>--dev3sa-paper</code>, <code>--dev3sa-tint</code>, <code>--dev3sa-line</code>); styles are scoped so classic themes do not leak in. RTL supported.</li>
+</ul>
+
+<h2 id="mobile">On phones</h2>
+<p>Under 600px the chat opens as a full-screen sheet. It follows the visual viewport, so the message box stays above the on-screen keyboard; it respects notches and the home indicator (safe-area insets); the page behind does not scroll; the phone's back button closes it; buttons are at least 44px; inputs use 16px text so iOS does not zoom. Product cards scroll sideways.</p>
+
+<h2 id="products">Product finder</h2>
+<p>Without AI the assistant searches titles, SKUs, descriptions, categories, tags and attribute terms (plurals understood) and ranks products by how well they match. It understands price limits ("under 50", "between 20 and 40", "over 100"), "on sale", "best sellers", "new arrivals", "top rated" and "cheapest". Hidden, private and draft products never appear; out-of-stock products can be hidden. On a product page the shopper can tap <em>Ask about this product</em>.</p>
+
+<h2 id="cart">Add to cart</h2>
+<p>Simple products get an <strong>Add to cart</strong> button on their card; variable, grouped and external products link to the product page. After adding, the chat shows View cart, Checkout and Undo, and the theme's mini cart refreshes (classic fragments and the block mini cart). With DEV3 AI, "add two of the blue mugs" adds the product directly (turn off <em>Add to cart when the shopper asks</em> to show the button instead).</p>
+
+<h2 id="orders">Order tracking</h2>
+<p>Logged-in customers see their recent orders; guests enter the order number and billing email (rate limited, 6 lookups per minute per IP). The card shows status, a timeline, items, total and tracking numbers from Advanced Shipment Tracking (<code>_wc_shipment_tracking_items</code>) or <code>_tracking_number</code>/<code>_tracking_provider</code>/<code>_tracking_url</code>, or any plugin via the <code>dev3sa_order_tracking</code> filter. Addresses, phone numbers and payment details are never shown.</p>
+
+<h2 id="kb">Knowledge base</h2>
+<p>Entries have a question/title, an answer, a type (FAQ, shipping, returns, payment, policy, product info, other), keywords and a status. In guided mode the best match is quoted; with DEV3 AI the most relevant entries are given to the AI as facts. <strong>Import from store</strong> is safe to run again (existing titles are skipped).</p>
+
+<h2 id="handoff">Talk to a person</h2>
+<p>"Talk to a person" shows a form (name, email, message). Your team receives an email with the transcript (Reply-To is the shopper), and the conversation is marked <em>Needs reply</em>. Add WhatsApp and phone buttons and business hours with an away message under <strong>Chat widget › Features &amp; contact</strong>.</p>
+
+<h2 id="inbox">Conversations</h2>
+<p>Search and filter by status and rating, open a transcript (products shown, actions, ratings, source of each answer), change status, reply by email (saved as a team message), summarise with DEV3 AI, delete, or export everything as CSV (spreadsheet formulas are neutralised).</p>
+
+<h2 id="dashboard">Dashboard &amp; attribution</h2>
+<p>KPIs for the chosen period: conversations, answered rate and DEV3 AI share, add-to-carts, revenue from chat, satisfaction and conversations needing a reply; a daily chart; top and unanswered questions; a setup checklist. Products added from the chat are remembered in the WooCommerce session; when an order containing them is created (classic or block checkout) it gets <code>_dev3sa_conversation</code> and <code>_dev3sa_assisted_total</code> meta, and the assisted total counts as revenue once the order is paid.</p>
+
+<h2 id="ai">DEV3 AI features</h2>
+<table>
+	<tr><th>Feature</th><th>Where</th><th>What it does</th></tr>
+	<tr><td>AI shopping chat</td><td>Storefront</td><td>Finds candidate products and answers by keyword + semantic search, then Gemini writes a short answer in the shopper's language, picks products (only from the candidates), suggests follow-ups and may add to cart, open order tracking or the handoff form. Prices and stock always come from WooCommerce.</td></tr>
+	<tr><td>Smart search index</td><td>Knowledge base / Dashboard</td><td>Embeds products and answers (gemini-embedding-001) in a background job; edits are re-indexed automatically.</td></tr>
+	<tr><td>Build my knowledge base</td><td>Knowledge base</td><td>Drafts FAQ entries from your policies and settings; facts it cannot find are marked <code>[CONFIRM: …]</code>.</td></tr>
+	<tr><td>Knowledge gaps</td><td>AI insights</td><td>Groups unanswered and low-rated questions and drafts the missing answers.</td></tr>
+	<tr><td>Conversation insights</td><td>AI insights</td><td>Themes, products shoppers asked for, sentiment and actions (personal data masked).</td></tr>
+	<tr><td>Persona writer</td><td>Chat widget</td><td>Name, greeting, starters, away message and voice instructions.</td></tr>
+	<tr><td>Conversation summary</td><td>Conversations</td><td>1-3 sentence summary with sentiment and follow-up flag.</td></tr>
+	<tr><td>Test console</td><td>Test console</td><td>Chat as a shopper with debug details (source, intent, model, tokens, knowledge used, timing).</td></tr>
+</table>
+<p class="note">Admin AI results are drafts: nothing is saved until you click Accept. Storefront AI falls back to guided answers when AI is off, the storefront switch is off, the monthly budget is reached, the per-conversation AI limit is reached, or Gemini fails. First questions from guests are cached for an hour; search embeddings for a day.</p>
+
+<h2 id="gemini">Google Gemini API key</h2>
+<ol>
+	<li>Open <a href="https://aistudio.google.com/app/apikey">Google AI Studio › API keys</a> and create a key.</li>
+	<li>Paste it in <strong>DEV3 AI Assistant › API Config</strong> and click <em>Validate</em>. It is stored encrypted (AES-256-GCM). You can also define <code>DEV3SA_GEMINI_API_KEY</code> in <code>wp-config.php</code>.</li>
+	<li>Pick models (defaults gemini-2.5-flash / gemini-2.5-pro), set a monthly budget and decide whether storefront AI is on.</li>
+</ol>
+
+<h2 id="privacy">Privacy</h2>
+<ul>
+	<li>Transcripts are kept for the retention period (default 90 days); with storage off messages are deleted after one day (totals are kept).</li>
+	<li>IP addresses are stored only as salted hashes. Optional consent line with a privacy-policy link under the message box.</li>
+	<li>GDPR: WordPress' Export/Erase Personal Data tools include chats by email or account.</li>
+	<li>With DEV3 AI on, the message, the relevant product facts and knowledge entries go to Google Gemini. Turn on PII masking in API Config to mask emails, phone numbers and card numbers before sending. A privacy-policy snippet is suggested under Settings › Privacy.</li>
+</ul>
+
+<h2 id="compat">Compatibility</h2>
+<p>WooCommerce HPOS and Cart/Checkout blocks (declared), block themes (Twenty Twenty-Five) and classic themes (Twenty Twenty-One, Astra, GeneratePress, Kadence, Flatsome), page caches (no nonce for guests, no requests until the chat opens), multisite, RTL, PHP 7.4–8.3. Storefront JS is about 20 KB minified (≈7 KB gzipped) and loads in the footer.</p>
+
+<h2 id="hooks">Hooks for developers</h2>
+<table>
+	<tr><th>Hook</th><th>Type</th><th>Use</th></tr>
+	<tr><td><code>dev3sa_show_widget</code></td><td>filter</td><td>Show/hide the floating chat on a request.</td></tr>
+	<tr><td><code>dev3sa_widget_config</code></td><td>filter</td><td>Storefront boot data (strings, colours, starters…).</td></tr>
+	<tr><td><code>dev3sa_chat_reply</code></td><td>filter</td><td>Every reply before it is stored and sent.</td></tr>
+	<tr><td><code>dev3sa_chat_ai_args</code></td><td>filter</td><td>Gemini arguments for the chat (contents, cache…).</td></tr>
+	<tr><td><code>dev3sa_prompt_chat</code> (and <code>_kb_build</code>, <code>_kb_gaps</code>, <code>_insights</code>, <code>_persona</code>, <code>_summary</code>)</td><td>filter</td><td>Override prompt templates and schemas.</td></tr>
+	<tr><td><code>dev3sa_product_search_results</code></td><td>filter</td><td>Keyword search results.</td></tr>
+	<tr><td><code>dev3sa_product_card</code></td><td>filter</td><td>Product card sent to the widget.</td></tr>
+	<tr><td><code>dev3sa_semantic_min_score</code></td><td>filter</td><td>Minimum cosine score for semantic matches (0.5).</td></tr>
+	<tr><td><code>dev3sa_find_order_id</code></td><td>filter</td><td>Map custom order numbers to order ids.</td></tr>
+	<tr><td><code>dev3sa_order_tracking</code>, <code>dev3sa_order_summary</code></td><td>filter</td><td>Tracking numbers and the order card.</td></tr>
+	<tr><td><code>dev3sa_store_facts</code></td><td>filter</td><td>Facts used by the importer and the knowledge builder.</td></tr>
+	<tr><td><code>dev3sa_public_rate_limit</code></td><td>filter</td><td>Requests per minute per IP for each public route.</td></tr>
+	<tr><td><code>dev3sa_handoff_requested</code></td><td>action</td><td>After a shopper asks for a person (send to Slack, a helpdesk…).</td></tr>
+	<tr><td><code>dev3sa_knowledge_saved</code>, <code>dev3sa_knowledge_deleted</code></td><td>action</td><td>Knowledge entry changes.</td></tr>
+</table>
+
+<h2 id="rest">REST API (<code>dev3sa/v1</code>)</h2>
+<p>Public (same-origin, rate limited): <code>POST public/chat</code>, <code>GET public/history</code>, <code>POST public/cart</code>, <code>POST public/order</code>, <code>POST public/handoff</code>, <code>POST public/rate</code>. Admin (<code>manage_options</code> + nonce): <code>stats</code>, <code>conversations</code> (+ <code>/&lt;id&gt;</code>, <code>/reply</code>, <code>/summary</code>, <code>/export</code>), <code>knowledge</code> (+ <code>/import</code>, <code>/bulk</code>), <code>ai/knowledge</code>, <code>ai/gaps</code>, <code>ai/insights</code>, <code>ai/persona</code>, <code>index</code>, <code>test-chat</code>, plus the shared <code>settings</code>, <code>models</code>, <code>usage</code> and <code>jobs</code> routes.</p>
+
+<h2 id="faq">FAQ</h2>
+<h3>Does it work without an AI key?</h3><p>Yes, in guided mode. Every feature except the DEV3 AI ones works.</p>
+<h3>Can the AI invent prices or discounts?</h3><p>Prices, stock and product links are rendered from WooCommerce, and product ids the AI returns are checked against the products it was given. The system prompt forbids inventing prices, stock, dates or policies.</p>
+<h3>How do I control cost?</h3><p>Set a monthly budget in API Config, limit AI answers per conversation and messages per minute in Chat widget › DEV3 AI. Starter buttons like "Track my order" never use AI.</p>
+<h3>Can I hide the chat on some pages?</h3><p>Yes: Chat widget › Where it shows, or the <code>dev3sa_show_widget</code> filter.</p>
+<h3>Where do handoff emails go?</h3><p>To the address in Chat widget › Features &amp; contact (default: the site admin email).</p>
+
+<h2 id="changelog">Changelog</h2>
+<p><strong>1.0.0</strong> First release.</p>
+
+<h2>Screenshots</h2>
+<div class="shots">
+	<figure><img src="screenshots/1-storefront-chat.png" alt="Chat with product cards on the shop page"><figcaption>Product answers with Add to cart</figcaption></figure>
+	<figure><img src="screenshots/2-mobile-sheet.png" alt="Full-screen chat on a phone"><figcaption>Full-screen sheet on phones</figcaption></figure>
+	<figure><img src="screenshots/3-dashboard.png" alt="Dashboard"><figcaption>Dashboard</figcaption></figure>
+	<figure><img src="screenshots/4-chat-widget.png" alt="Chat widget settings with live preview"><figcaption>Chat widget + live preview</figcaption></figure>
+	<figure><img src="screenshots/5-conversation.png" alt="Conversation transcript"><figcaption>Conversations inbox</figcaption></figure>
+	<figure><img src="screenshots/6-test-console.png" alt="Test console"><figcaption>Test console</figcaption></figure>
+</div>
+</main>
+</body>
+</html>
